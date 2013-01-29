@@ -1,2 +1,4 @@
+removed_sources:
+  seabios-1.7.1.tar.gz: bd836dda16d3c4e7a55d884cafed7c725e6ee464
 sources:
-  "seabios-1.7.1.tar.gz": bd836dda16d3c4e7a55d884cafed7c725e6ee464
+  seabios-1.7.2.tar.gz: c5b55bc5c99e5c2b753c3c5504c3e9b75d100118
