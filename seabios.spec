@@ -1,13 +1,11 @@
 Name:		seabios
-Version:	1.7.2
+Version:	1.7.2.2
 Release:	1
 Summary:	Open-source legacy BIOS implementation
 Group:		Emulators
 License:	LGPLv3
 URL:		http://www.coreboot.org/SeaBIOS
 Source0:	http://code.coreboot.org/p/seabios/downloads/get/%{name}-%{version}.tar.gz
-# fix issue caused by later IASL versions
-Patch1:		seabios-1.7.2-iasl20130117.patch
 BuildRequires:	python iasl
 ExclusiveArch:	%{ix86} x86_64
 Requires:	%{name}-bin = %{version}-%{release}
@@ -42,7 +40,6 @@ that a typical x86 proprietary BIOS implements.
 
 %prep
 %setup -q
-%patch1 -p1
 
 # Makefile changes version to include date and buildhost
 sed -i 's,VERSION=%{version}.*,VERSION=%{version},g' Makefile
