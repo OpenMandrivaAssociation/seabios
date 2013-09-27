@@ -7,7 +7,7 @@ License:	LGPLv3
 URL:		http://www.coreboot.org/SeaBIOS
 Source0:	http://code.coreboot.org/p/seabios/downloads/get/%{name}-%{version}.tar.gz
 BuildRequires:	python iasl
-ExclusiveArch:	%{ix86} x86_64
+ExclusiveArch:	%{ix86} x86_64 %arm
 Requires:	%{name}-bin = %{version}-%{release}
 
 # Seabios is noarch, but required on architectures which cannot build it.
