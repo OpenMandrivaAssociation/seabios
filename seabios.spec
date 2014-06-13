@@ -1,6 +1,6 @@
 Name:		seabios
 Version:	1.7.3.2
-Release:	5
+Release:	6
 Summary:	Open-source legacy BIOS implementation
 Group:		Emulators
 License:	LGPLv3
