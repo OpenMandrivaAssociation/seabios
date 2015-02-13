@@ -45,6 +45,7 @@ that a typical x86 proprietary BIOS implements.
 sed -i 's,VERSION=%{version}.*,VERSION=%{version},g' Makefile
 
 %build
+export CC=gcc
 mkdir -p bfd
 ln -s %{_bindir}/ld.bfd bfd/ld
 export PATH=$PWD/bfd:$PATH
@@ -54,7 +55,7 @@ sed -i 's,CONFIG_DEBUG_LEVEL=.*,CONFIG_DEBUG_LEVEL=%{debug_level},g' .config
 
 %ifarch %{ix86} x86_64
 export CFLAGS="$RPM_OPT_FLAGS"
-make
+make PYTHON=%__python2
 %endif
 
 %install
