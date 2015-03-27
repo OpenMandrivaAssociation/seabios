@@ -1,6 +1,6 @@
 Name:		seabios
-Version:	1.7.3.2
-Release:	9
+Version:	1.7.5.2
+Release:	1
 Summary:	Open-source legacy BIOS implementation
 Group:		Emulators
 License:	LGPLv3
@@ -54,8 +54,8 @@ make .config
 sed -i 's,CONFIG_DEBUG_LEVEL=.*,CONFIG_DEBUG_LEVEL=%{debug_level},g' .config
 
 %ifarch %{ix86} x86_64
-export CFLAGS="$RPM_OPT_FLAGS"
-make PYTHON=%__python2
+export CFLAGS="%{optflags}"
+make PYTHON=python2
 %endif
 
 %install
