@@ -1,6 +1,6 @@
 Name:		seabios
-Version:	1.7.3.2
-Release:	11
+Version:	1.9.0
+Release:	1
 Summary:	Open-source legacy BIOS implementation
 Group:		Emulators
 License:	LGPLv3
@@ -65,7 +65,7 @@ install -m 0644 out/bios.bin %{buildroot}%{_datadir}/seabios
 %endif
 
 %files
-%doc COPYING COPYING.LESSER README TODO
+%doc COPYING COPYING.LESSER README
 
 %ifarch %{ix86} x86_64
 %files bin
