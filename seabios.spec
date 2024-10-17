@@ -4,7 +4,7 @@ Release:	4
 Summary:	Open-source legacy BIOS implementation
 Group:		Emulators
 License:	LGPLv3
-URL:		http://www.coreboot.org/SeaBIOS
+URL:		https://www.coreboot.org/SeaBIOS
 Source0:	http://code.coreboot.org/p/seabios/downloads/get/%{name}-%{version}.tar.gz
 BuildRequires:	python iasl
 ExclusiveArch:	%{ix86} x86_64 %arm
