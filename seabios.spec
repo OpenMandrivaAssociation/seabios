@@ -6,6 +6,7 @@ Group:		Emulators
 License:	LGPLv3
 URL:		https://www.coreboot.org/SeaBIOS
 Source0:	http://code.coreboot.org/p/seabios/downloads/get/%{name}-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	python iasl
 ExclusiveArch:	%{ix86} x86_64 %arm
 Requires:	%{name}-bin = %{version}-%{release}
